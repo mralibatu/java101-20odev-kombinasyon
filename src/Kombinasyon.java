@@ -4,28 +4,28 @@ public class Kombinasyon {
         Scanner input = new Scanner(System.in);
         int n,r;
         int ndeger = 1,rdeger = 1,nrdeger=1;
-        System.out.println("Eleman sayisini giriniz : ");
+        System.out.println("n yi giriniz : ");
         n = input.nextInt();
-        System.out.println("R yi giriniz : ");
+        System.out.println("r yi giriniz : ");
         r = input.nextInt();
         if (n>=r) {
             for (int i = 1; i <= n; i++) {
                 ndeger *= i;
             }
 
-            System.out.println(ndeger);
+            System.out.println(ndeger);         // kodun nerede hata verdigini anlamak için konuldu
 
             for (int i = 1; i <= r; i++) {
                 rdeger *= i;
             }
 
-            System.out.println(rdeger);
+            System.out.println(rdeger);         // kodun nerede hata verdigini anlamak için konuldu
 
             for (int i = 1; i <= (n - r); i++) {
                 nrdeger *= i;
             }
 
-            System.out.println(nrdeger);
+            System.out.println(nrdeger);        // kodun nerede hata verdigini anlamak için konuldu
 
             int sonuc = ndeger / (rdeger * nrdeger);
             System.out.println(sonuc);
